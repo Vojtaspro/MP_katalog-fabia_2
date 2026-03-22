@@ -183,20 +183,22 @@ try:
                         <div class="motor-col">
                             <p>Objem: <b>{car.get('Objem [l]', '-')} l</b></p>
                             <p>Výkon: <b>{car.get('Výkon [kW]', '-')} kW</b></p>
-                            <p>Moment: <b>{car.get('Točivý moment [Nm]', '-')} Nm</b></p>
-                            <p>Válce: <b>{car.get('Počet válců', '-')}</b></p>
+                            <p>Točivý moment: <b>{car.get('Točivý moment [Nm]', '-')} Nm</b></p>
+                            <p>Zdvihový objem: <b>{car.get('Zdvihový objem v [cm³]', '-')} cm³</b></p>
+                            <p>Počet válců: <b>{car.get('Počet válců', '-')}</b></p>
                         </div>
                         <div class="motor-col">
+                            <p>Typ: <b>{car.get('Typ', '-')}</b></p> 
                             <p>Pohon: <b>{car.get('Pohon', '-')}</b></p>
                             <p>Převodovka: <b>{car.get('Převodovka', '-')}</b></p>
-                            <p>Typ: <b>{car.get('Typ', '-')}</b></p>
+                            <p>Spojka: <b>{car.get('Spojka', '-')}</b></p>
                         </div>
                     </div>
                 </div>
                 <div class="custom-card">
                     <div class="card-title">🚀 Rychlosti</div>
                     <p>Nejvyšší rychlost: <b>{car.get('Nejvyšší rychlost [km/h]', '-')} km/h</b></p>
-                    <p>Zrychlení 0-100: <b>{car.get('Zrychlení 0 - 100 km/h', '-')} s</b></p>
+                    <p>Zrychlení 0-100 km/h: <b>{car.get('Zrychlení 0 - 100 km/h', '-')} s</b></p>
                 </div>
             ''', unsafe_allow_html=True)
 
@@ -205,17 +207,19 @@ try:
                 <div class="custom-card">
                     <div class="card-title">⛽ Palivo</div>
                     <p>Typ paliva: <b>{car.get('Typ paliva', '-')}</b></p>
-                    <p>Spotřeba: <b>{car.get('Kombinovaná spotřeba paliva [l/100 km]', '-')} l/100 km</b></p>
+                    <p>Kombinovaná spotřeba paliva: <b>{car.get('Kombinovaná spotřeba paliva [l/100 km]', '-')} l/100 km</b></p>
+                    <p>Emisní hodnoty CO2: <b>{car.get('Emisní hodnoty CO2 [g/km]', '-')} g/km</b></p>
+                    <p>Exhalační norma: <b>{car.get('Exhalační norma', '-')}</b></p>
                 </div>
                 <div class="custom-card">
                     <div class="card-title">⚖️ Hmotnosti</div>
                     <p>Celková hmotnost: <b>{car.get('Celková hmotnost [kg]', '-')} kg</b></p>
-                    <p>Pohotovostní: <b>{car.get('Pohotovostní hmotnost [kg]', '-')} kg</b></p>
+                    <p>Pohotovostní hmotnost: <b>{car.get('Pohotovostní hmotnost [kg]', '-')} kg</b></p>
                 </div>
                 <div class="custom-card">
                     <div class="card-title">📦 Objemy</div>
-                    <p>Kufr: <b>{car.get('Objem zavazadlového prostoru [l]', '-')} l</b></p>
-                    <p>Nádrž: <b>{car.get('Objem palivové nádrže [l]', '-')} l</b></p>
+                    <p>Objem zavazadlového prostoru: <b>{car.get('Objem zavazadlového prostoru [l]', '-')} l</b></p>
+                    <p>Objem palivové nádrže: <b>{car.get('Objem palivové nádrže [l]', '-')} l</b></p>
                 </div>
             ''', unsafe_allow_html=True)
 
